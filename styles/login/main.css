@@ -1,0 +1,72 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content>h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 10px;
+    font-family: "Marcellus";
+    font-weight: normal;
+}
+
+.content>.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.content>.fields,
+input:not([type=checkbox]) {
+    width: 100%;
+
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    border: solid 0px;
+}
+
+.content>.fields>.remember-me-password {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.content>.fields>.remember-me-password>div {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+}
+
+.content>.fields>.remember-me-password>div>*{
+    padding: 10px;
+}
+
+.content > .fields > button {
+    border: solid 0px;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    color: #111C4E;
+    font-family: "Metropolis";
+    border-radius: 5px;
+}
+
+.content > .fields > .no-acc {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

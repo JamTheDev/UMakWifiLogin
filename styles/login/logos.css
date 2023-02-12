@@ -1,0 +1,10 @@
+.logos {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+}
+
+.logos * {
+    padding: 10px;
+}
