@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url(../styles/login/logos.css);
+@import url(../styles/toast/toast.css);
 
 /* Fonts */
 @font-face {
@@ -18,11 +19,15 @@ html {
     width: 100%;
     height: 100%;
 
+    padding: 0 auto;
+    margin: 0 auto;
+
     overflow: hidden;
 
     background: linear-gradient(to right,hsla(229, 64%, 19%, 0.70), hsla(229, 64%, 19%, 0.70)), url(../assets/images/UmakAdminBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     display: grid;
     place-items: center;

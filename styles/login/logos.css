@@ -2,9 +2,50 @@
     display: flex;
 
     align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
-.logos * {
-    padding: 10px;
+.logos > div:first-child, .logos > div:last-child {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.logos > div:nth-child(2) {
+    width: 200px;
+    height: 180px;
+    object-fit: cover; 
+    background: url("../../assets/logos/CIT.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logos > div:first-child {
+    background-image: url("../../assets/logos/UMAK.png"); 
+}
+
+.logos > div:last-child {
+    background-image: url("../../assets/logos/USMO.png"); 
+}
+
+@media only screen and (max-width: 750px) {
+    .logos > div:first-child, .logos > div:last-child {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logos > div:nth-child(2) {
+        width: 170px;
+        height: 160px;
+    }
+}
+
+.logos > * {
+    margin: 0.6vw;
 }

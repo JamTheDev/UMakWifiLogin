@@ -18,6 +18,8 @@ h4 {
 .content>.fields {
     display: flex;
     flex-direction: column;
+
+    font-family: "Metropolis";
 }
 
 .content>.fields,
@@ -69,4 +71,8 @@ input:not([type=checkbox]) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.content > .fields > .no-acc > a {
+    color: #869CFF;
 }

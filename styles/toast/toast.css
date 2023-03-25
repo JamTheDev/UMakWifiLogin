@@ -1,0 +1,116 @@
+.toast {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    padding: 0 auto;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+
+    pointer-events: none;
+}
+
+.toast-container {
+   position: relative;
+   width: 20%;
+   height: 70px;
+   background-color: rgba(0, 0, 0, 0.5);
+
+   margin: 10px;
+   padding: 20px;
+
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+   animation-name: toastEnterAnim;
+   animation-duration: 1s;
+
+   transition: .1s ease-in .9s;
+
+   cursor: pointer;
+   pointer-events: auto;
+}
+
+.toast-container-destroy {
+    position: relative;
+   width: 20%;
+   height: 70px;
+   background-color: rgba(0, 0, 0, 0.5);
+
+   margin: 10px;
+   padding: 20px;
+
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+   animation-name: toastLeaveAnim;
+    animation-duration: 1s;
+}
+
+.toast-container > *,
+.toast-container-destroy > *{
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    color: white;
+}
+
+.toast-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toast-subtitle {
+    font-size: 12px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .toast {
+        justify-content: end;
+        align-items: center;
+    }
+
+    .toast > .toast-container,
+    .toast > .toast-container-destroy
+    {
+        width: 80%;
+
+        margin: 10px;
+        padding: 20px 25px 20px 25px;
+
+        align-items: center;
+    }
+
+    .toast > .toast-subtitle {
+        text-align: center;
+    }
+}
+
+
+@keyframes toastEnterAnim {
+    from {
+        bottom: -100px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+
+@keyframes toastLeaveAnim {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -500px;
+    }
+}
+
