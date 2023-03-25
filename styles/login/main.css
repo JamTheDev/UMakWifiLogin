@@ -18,7 +18,8 @@ h4 {
 .content>.fields {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
     font-family: "Metropolis";
 }
 
@@ -34,6 +35,10 @@ input:not([type=checkbox]) {
 
     border-radius: 5px;
     border: solid 0px;
+}
+
+.content > .fields > input[type="checkbox"] {
+    accent-color: transparent;
 }
 
 .content>.fields>.remember-me-password {
@@ -66,7 +71,7 @@ input:not([type=checkbox]) {
 
 .content > .fields > .no-acc {
     width: 100%;
-    padding: 10px;
+    margin: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,4 +80,23 @@ input:not([type=checkbox]) {
 
 .content > .fields > .no-acc > a {
     color: #869CFF;
+}
+
+.content > .fields > .login {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .content > .fields > .remember-me-password > .checkbox > label,
+    .content > .fields > .remember-me-password > div > span
+    {
+        font-size: 12px;
+    }
+
+    .content > .fields > .no-acc {
+        font-size: 11px;
+        margin: 20px;
+    }
 }

@@ -71,6 +71,12 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 900px) {
+    .toast > .toast-container,
+    .toast > .toast-container-destroy {
+        width: 50%;
+    }
+}
 @media only screen and (max-width: 750px) {
     .toast {
         justify-content: end;
@@ -81,7 +87,7 @@
     .toast > .toast-container-destroy
     {
         width: 80%;
-
+        height: 50px;
         margin: 10px;
         padding: 20px 25px 20px 25px;
 
@@ -111,6 +117,7 @@
 
     to {
         left: -500px;
+        opacity: 0;
     }
 }
 

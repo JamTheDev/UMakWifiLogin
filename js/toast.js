@@ -12,8 +12,7 @@ window.onload = () => {
     });
     
 }
-/**
- *
+/**`
  *  Generates a toast
  */
 function toast(title, subtitle, duration, callback = null) {
