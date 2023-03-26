@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url(../styles/login/logos.css);
 @import url(../styles/toast/toast.css);
+@import url(../styles/inputs/fields.css);
 
 /* Fonts */
 @font-face {
@@ -38,5 +39,9 @@ html {
 }
 
 a:link {
+    color: aquamarine;
+}
+
+a:link:visited {
     color: aquamarine;
 }

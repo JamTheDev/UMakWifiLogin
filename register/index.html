@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
     
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.global.css" />
     <link rel="stylesheet" href="../styles/login/main.css" />
+
+    <link rel="stylesheet" href="../styles/style.global.css" />
     <link rel="icon" href="./assets/logos/UMAK.png" />
     <title>UMak Wi-fi</title>
 </head>
@@ -27,9 +29,9 @@
 
         <form class="fields">
 
-            <input type="text" placeholder="STUDENT NUMBER (Ex. A12240987)" />
-            <input type="password" placeholder="SET PASSWORD" />
-            <input type="password" placeholder="REPEAT PASSWORD" />
+            <input class="text-field" type="text" placeholder="STUDENT NUMBER (Ex. A12240987)" />
+            <input class="text-field" type="password" placeholder="SET PASSWORD" />
+            <input class="text-field" type="password" placeholder="REPEAT PASSWORD" />
             
             <div class="checkbox">
                 <input type="checkbox" id="remember" />
@@ -46,6 +48,15 @@
             </div>
         </form>
     </div>
+    <div class="toast">
+        <div class="toast-container">
+            <span class="toast-title"> Hello, Herons! </span>
+            <span class="toast-subtitle"> This is a toast message. </span>
+        </div>
+    </div>
+
+    <script src="../js/toast.js"> </script>
+    <script src="../js/validator.js"> </script>
 
 </body>
 

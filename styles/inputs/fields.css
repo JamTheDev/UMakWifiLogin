@@ -1,0 +1,22 @@
+
+input.text-field:not([type=checkbox]) {
+    width: 100%;
+
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    border: 3px solid white;
+
+    transition-duration: .3s;
+}
+
+input.text-field.error-input {
+    transition-duration: .3s;
+    border: 3px solid #FF000099;
+}
+
+

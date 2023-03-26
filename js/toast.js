@@ -1,7 +1,9 @@
 let toastParentEl;
 let toastContEl;
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", start);
+
+function start() {
     toastParentEl = document.querySelector(".toast"); 
     toastContEl = document.querySelector(".toast-container");
 

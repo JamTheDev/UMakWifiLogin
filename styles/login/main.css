@@ -15,7 +15,21 @@ h4 {
     font-weight: normal;
 }
 
+.content > .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.content > .title > .subtitle {
+       font-size: 50px;
+       font-weight: bold;
+}
+
 .content>.fields {
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,19 +37,6 @@ h4 {
     font-family: "Metropolis";
 }
 
-.content>.fields,
-input:not([type=checkbox]) {
-    width: 100%;
-
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    box-sizing: border-box;
-
-    border-radius: 5px;
-    border: solid 0px;
-}
 
 .content > .fields > input[type="checkbox"] {
     accent-color: transparent;
@@ -59,7 +60,7 @@ input:not([type=checkbox]) {
     padding: 10px;
 }
 
-.content > .fields > button {
+.content > .fields > .login {
     border: solid 0px;
     background-color: white;
     padding: 10px;
@@ -67,6 +68,14 @@ input:not([type=checkbox]) {
     color: #111C4E;
     font-family: "Metropolis";
     border-radius: 5px;
+    cursor: pointer;
+
+    transition-duration: .3s;
+}
+
+.content > .fields > .login:hover {
+    background-color: #111C4E;
+    color: white;
 }
 
 .content > .fields > .no-acc {
@@ -87,8 +96,14 @@ input:not([type=checkbox]) {
     margin: 10px 0 0 0;
 }
 
-
 @media only screen and (max-width: 750px) {
+    .content {
+        width: 85vw;
+    }
+    .content > .fields {
+        width: 90%;
+    }
+
     .content > .fields > .remember-me-password > .checkbox > label,
     .content > .fields > .remember-me-password > div > span
     {
@@ -98,5 +113,13 @@ input:not([type=checkbox]) {
     .content > .fields > .no-acc {
         font-size: 11px;
         margin: 20px;
+    }
+
+    .content > .title > h3 {
+        font-size: 14px;
+    }
+
+    .content > .title > .subtitle {
+        font-size: 40px;
     }
 }
