@@ -46,6 +46,22 @@
     }
 }
 
+@media only screen and (max-height: 700px) {
+    .logos > div:first-child, .logos > div:last-child {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logos > div:nth-child(2) {
+        width: 150px;
+        height: 130px;
+    }
+
+    .logos > * {
+        margin: 0.3vw;
+    }
+}
+
 .logos > * {
     margin: 0.6vw;
 }
